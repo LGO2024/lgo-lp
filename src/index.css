@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1B6FE4;
+  --primary-dark: #1558c0;
+  --cta: #F96C30;
+  --cta-dark: #e05a20;
+  --accent: #FFDA54;
+  --light-blue: #EEF8FF;
+  --line-green: #06C755;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-cta {
+  background: linear-gradient(135deg, #F96C30 0%, #ff8c5a 100%);
+  color: white;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 4px 20px rgba(249, 108, 48, 0.4);
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(249, 108, 48, 0.5);
+}
+
+.btn-line {
+  background: #06C755;
+  color: white;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 4px 20px rgba(6, 199, 85, 0.4);
+}
+
+.btn-line:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(6, 199, 85, 0.5);
+}
