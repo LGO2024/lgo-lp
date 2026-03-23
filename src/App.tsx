@@ -5,7 +5,6 @@ import Solution from './components/Solution'
 import Simulator from './components/Simulator'
 import LineCta from './components/LineCta'
 import Strengths from './components/Strengths'
-import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import FinalCta from './components/FinalCta'
 import Footer from './components/Footer'
@@ -22,7 +21,6 @@ function App() {
         <Simulator />
         <LineCta />
         <Strengths />
-        <Testimonials />
         <FAQ />
         <FinalCta />
       </main>
