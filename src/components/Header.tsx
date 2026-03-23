@@ -13,7 +13,7 @@ export default function Header() {
         >
           LGO
         </span>
-        <span className="hidden sm:inline text-xs text-gray-500 font-medium">AI合宿マッチング</span>
+        <span className="hidden sm:inline text-xs text-gray-500 font-medium">LGO旅チェック</span>
       </div>
 
       <a

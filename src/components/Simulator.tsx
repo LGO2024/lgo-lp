@@ -225,52 +225,68 @@ export default function Simulator() {
                 ))}
               </div>
 
-              {/* Mock plan cards */}
-              <div className="space-y-4 mb-6">
-                {plans.map((plan, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1 }}
-                    className="p-4 rounded-2xl"
-                    style={{ border: '1px solid #e5e7eb', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}
-                  >
-                    <div className="flex items-start justify-between mb-2">
-                      <span
-                        className="text-xs font-black px-3 py-1 rounded-full text-white"
-                        style={{ background: plan.badgeColor }}
-                      >
-                        {plan.badge}
-                      </span>
-                      <span className="text-xs text-gray-400">予算: {plan.price}</span>
-                    </div>
-                    <p className="font-bold text-sm mb-1">{plan.name}</p>
-                    <p className="text-xs text-gray-500 mb-2 leading-relaxed">{plan.description}</p>
-                    <div className="flex flex-wrap gap-1">
-                      {plan.features.map((f, fi) => (
+              {/* Mock plan cards (blurred) */}
+              <div className="relative mb-6">
+                <div className="space-y-4" style={{ filter: 'blur(4px)', userSelect: 'none', pointerEvents: 'none' }}>
+                  {plans.map((plan, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.1 }}
+                      className="p-4 rounded-2xl"
+                      style={{ border: '1px solid #e5e7eb', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}
+                    >
+                      <div className="flex items-start justify-between mb-2">
                         <span
-                          key={fi}
-                          className="text-xs px-2 py-0.5 rounded-full"
-                          style={{ background: '#EEF8FF', color: '#1B6FE4' }}
+                          className="text-xs font-black px-3 py-1 rounded-full text-white"
+                          style={{ background: plan.badgeColor }}
                         >
-                          {f}
+                          {plan.badge}
                         </span>
-                      ))}
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+                        <span className="text-xs text-gray-400">予算: {plan.price}</span>
+                      </div>
+                      <p className="font-bold text-sm mb-1">{plan.name}</p>
+                      <p className="text-xs text-gray-500 mb-2 leading-relaxed">{plan.description}</p>
+                      <div className="flex flex-wrap gap-1">
+                        {plan.features.map((f, fi) => (
+                          <span
+                            key={fi}
+                            className="text-xs px-2 py-0.5 rounded-full"
+                            style={{ background: '#EEF8FF', color: '#1B6FE4' }}
+                          >
+                            {f}
+                          </span>
+                        ))}
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
 
-              {/* CTA */}
-              <a
-                href={LINE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-cta w-full block text-center text-base"
-              >
-                詳細プランをLINEで確認する（無料）
-              </a>
+                {/* Blur overlay + LINE CTA */}
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl"
+                  style={{
+                    background: 'linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.92) 40%)',
+                  }}
+                >
+                  <p className="font-black text-base sm:text-lg mb-1" style={{ color: '#1a1a1a' }}>
+                    🎁 3つのプランが見つかりました！
+                  </p>
+                  <p className="text-xs text-gray-500 mb-4 text-center px-4">
+                    LINEを追加すると<br />全プランの詳細が無料で確認できます
+                  </p>
+                  <a
+                    href={LINE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-cta block text-center text-base"
+                    style={{ padding: '0.75rem 2rem' }}
+                  >
+                    LINEで全プランを見る（無料）
+                  </a>
+                </div>
+              </div>
 
               <button
                 onClick={handleReset}
