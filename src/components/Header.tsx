@@ -1,4 +1,4 @@
-const LINE_URL = 'https://lin.ee/Y6CJmpm'
+const LINE_URL = 'https://lin.ee/X3UQbkT'
 
 export default function Header() {
   return (
