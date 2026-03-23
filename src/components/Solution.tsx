@@ -18,7 +18,7 @@ export default function Solution() {
             LGOが、そのすべての悩みを<br />解決します！
           </h2>
           <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto" style={{ fontSize: 'clamp(0.9rem, 2vw, 1.05rem)' }}>
-            LGOは、大学生のサークルやゼミの合宿・旅行幹事のために生まれた、<strong>AI即時マッチングサービス</strong>です。<br />
+            LGOは、大学生のサークルやゼミの合宿・旅行幹事のために生まれた、<strong>即時マッチングサービス</strong>です。<br />
             あなたの「やりたくない」を「やってよかった！」に変える、画期的なソリューションを提供します。
           </p>
         </motion.div>
@@ -79,7 +79,7 @@ export default function Solution() {
                   幹事の喜び
                 </div>
                 <ul className="mt-3 text-xs text-gray-600 text-left space-y-1">
-                  <li>✅ AIが即座にプラン提案</li>
+                  <li>✅ LGOが即座にプラン提案</li>
                   <li>✅ 10分で宿が決まる</li>
                   <li>✅ 予算ぴったりの提案</li>
                   <li>✅ 思い出作りに専念</li>
@@ -92,7 +92,7 @@ export default function Solution() {
               style={{ background: '#EEF8FF' }}
             >
               <p className="text-sm font-bold" style={{ color: '#1B6FE4' }}>
-                🤖 AIが24時間365日、あなたの合宿計画をサポート
+                🙌 LGOが24時間365日、あなたの合宿計画をサポート
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function Solution() {
           {[
             { num: '10分', label: '平均プラン決定時間' },
             { num: '無料', label: '学生は完全無料' },
-            { num: '24h', label: 'AIサポート対応' },
+            { num: '24h', label: 'LGOサポート対応' },
           ].map((stat, i) => (
             <div key={i} className="text-center">
               <div className="text-2xl font-black" style={{ color: '#1B6FE4' }}>{stat.num}</div>

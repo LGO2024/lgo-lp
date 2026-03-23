@@ -27,16 +27,16 @@ export default function LineCta() {
           </h2>
 
           <p className="text-gray-600 mb-8 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 2vw, 1rem)' }}>
-            LINEで友だち追加するだけで、AIチャットがあなたの旅行計画を<br className="hidden sm:block" />
+            LINEで友だち追加するだけで、LGOがあなたの旅行計画を<br className="hidden sm:block" />
             24時間サポート。詳細なプランの提案から予約まで完全サポートします。
           </p>
 
           {/* Feature list */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '🤖', text: 'AIが即座に回答' },
+              { icon: '🤖', text: 'LGOが即座に回答' },
               { icon: '🎯', text: '3択で迷わない提案' },
-              { icon: '🎬', text: 'AI動画生成も無料' },
+              { icon: '🎬', text: '動画生成も無料' },
             ].map((item, i) => (
               <div
                 key={i}

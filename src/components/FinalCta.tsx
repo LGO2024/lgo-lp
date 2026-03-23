@@ -36,7 +36,7 @@ export default function FinalCta() {
           </h2>
           <p className="text-blue-100 mb-8 leading-relaxed" style={{ fontSize: 'clamp(0.9rem, 2vw, 1.05rem)' }}>
             LGOで、あなたも最高の合宿・旅行体験を。<br />
-            今すぐAIシミュレーターを試して、幹事の負担から解放されましょう！
+            今すぐLGOシミュレーターを試して、幹事の負担から解放されましょう！
           </p>
 
           <a

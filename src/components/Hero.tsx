@@ -58,7 +58,7 @@ export default function Hero() {
           className="text-blue-100 font-bold mb-5"
           style={{ fontSize: 'clamp(1rem, 2.5vw, 1.4rem)' }}
         >
-          AIがあなたの合宿・旅行計画を劇的に変える。
+          LGOがあなたの合宿・旅行計画を劇的に変える。
         </motion.p>
 
         {/* Description */}
@@ -84,7 +84,7 @@ export default function Hero() {
             className="btn-cta w-full sm:w-auto text-base sm:text-lg"
             style={{ padding: '1rem 2rem', fontSize: 'clamp(0.9rem, 2vw, 1.1rem)', maxWidth: '480px' }}
           >
-            1分でわかる！合宿AI予算シミュレーターを試す（無料）
+            1分でわかる！合宿予算シミュレーターを試す（無料）
           </button>
         </motion.div>
 

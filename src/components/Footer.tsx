@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="mb-4">
           <span className="text-2xl font-black text-white">LGO</span>
         </div>
-        <p className="text-sm mb-3">AI合宿・旅行マッチングサービス</p>
+        <p className="text-sm mb-3">LGO合宿・旅行マッチングサービス</p>
 <p className="text-xs">© 2026 LGO. All Rights Reserved.</p>
       </div>
     </footer>

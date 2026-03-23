@@ -104,7 +104,7 @@ export default function Simulator() {
             style={{ fontSize: 'clamp(1.3rem, 3.5vw, 2rem)', color: '#1a1a1a' }}
           >
             まずは1分で診断！<br />
-            あなたの理想の合宿プランを<br className="sm:hidden" />AIが瞬時に提案
+            あなたの理想の合宿プランを<br className="sm:hidden" />LGOが瞬時に提案
           </h2>
           <p className="text-gray-500 text-sm">
             個人情報入力は一切不要！たった4つの質問に答えるだけ
